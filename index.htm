@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <link rel="shortcut icon" href="3.png" type="image/x-icon" />
+    <title>OnlineLibrary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="olib_style.css">
+
+
+    <script>
+        function bigImg(x) {
+            x.style.height = "40px";
+            x.style.width = "40px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "25px";
+            x.style.width = "25px";
+        }
+</script>
+
+
+</head>
+<body>
+<div class="maindiv"> 
+
+<header>
+<a href="index.htm"><img src="3.png" alt="book logo" style=" float:left;  margin:25px; width:250px;height:110px;" /></a> 
+<img src="search (1).png" alt="search" style="float:right; margin-top:60px; margin-right:40px; width:40px; height:40px; padding:1em;"/>
+
+<a href="#"><img  src="twitter.png"  alt="twitter" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="Instagram.png"  alt="Instagram" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="facebook.png"  alt="facebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+
+<h1 style=" text-align:left; font-size:500%; font-family:Times New Roman Baltic;"> Online Library </h1>
+
+</header>
+
+<div class="scrollmenu">
+<a href="index.htm">HOME</a>
+<a href="art.htm">ARTS</a>
+<a href="history.htm">HISTORY </a>
+<a href="science.htm">SCIENCE</a>
+<a href="favorits.htm">FAVORITS</a>
+<a href="aboutUs.htm">ABOUT US</a>
+<a href="contactUS.htm">CONTACT US</a>
+<a href="Rigister.htm">Registration</a>
+
+</div>
+<br />
+<br />
+<br />
+<h2 style="text-align:center;color:#5f4339;font-size:250%;">
+<strong>WELCOME TO OUR ONLINE LIBRARY </strong>
+</h2>
+<br />
+
+
+<!-- chang-->
+
+<video width="600px" height="400px" controls>
+<source src="book.mp4" type="video/mp4"></source>
+ Your browser does not support the video tag.
+</video>
+
+<div  class ="img1" >
+  <img  class="mySlides" src="Orhan.jpg"  >
+  <img class="mySlides" src="Seuss.jpg" >
+  <img class="mySlides" src="Saul.jpg" >
+</div>
+
+
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+</script>
+
+<div class="pp"; id="txt"></div>
+
+  <script>
+      var txtt = ["“The more that you read, the more things you will know. The more that you learn, the more places you'll go.”       ― Dr. Seuss",
+       "“People can lose their lives in libraries. They ought to be warned.”         ― Saul Bellow",
+        "“I read a book one day and my whole life was changed.”     ― Orhan Pamuk"];
+
+      textSequence(0);
+      function textSequence(i) {
+
+          if (txtt.length > i) {
+              setTimeout(function () {
+                  document.getElementById("txt").innerHTML = txtt[i];
+                  textSequence(++i);
+              }, 4000);
+
+          } else if (txtt.length == i) {
+              textSequence(0);
+          }
+
+      }
+    </script>
+
+
+<!-- chang-->
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+<footer>
+<p9>Copyright &copy;OnlineLibrary.com</p9>
+<a href="#"><img  src="twitter.png"  alt="twitter" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="Instagram.png"  alt="Instagram" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="facebook.png"  alt="facebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+
+</footer>
+</div>
+</body>
+</html>

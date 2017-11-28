@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <link rel="shortcut icon" href="3.png" type="image/x-icon" />
+    <title>OnlineLibrary</title>
+   <link rel="stylesheet" href="olib_style.css">
+
+<script>
+    function bigImg(x) {
+        x.style.height = "40px";
+        x.style.width = "40px";
+    }
+
+    function normalImg(x) {
+        x.style.height = "25px";
+        x.style.width = "25px";
+    }
+</script>
+
+
+</head>
+<body>
+<div class="maindiv"> 
+
+<header>
+<a href="index.htm"><img src="3.png" alt="book logo" style=" float:left;  margin:25px; width:250px;height:110px;" /></a> 
+<img src="search (1).png" alt="search" style="float:right; margin-top:60px; margin-right:40px; width:40px; height:40px; padding:1em;"/>
+
+<a href="#"><img  src="twitter.png"  alt="twitter" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="Instagram.png"  alt="Instagram" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="facebook.png"  alt="facebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+
+<h1 style=" text-align:left; font-size:500%; font-family:Times New Roman Baltic;"> Online Library </h1>
+
+</header>
+
+<div class="scrollmenu">
+<a href="index.htm";>HOME</a>
+<a href="art.htm";>ARTS</a>
+<a href="history.htm">HISTORY </a>
+<a href="science.htm">SCIENCE</a>
+<a href="favorits.htm">FAVORITS</a>
+<a href="aboutUs.htm">ABOUT US</a>
+<a href="contactUS.htm">CONTACT US</a>
+<a href="Rigister.htm">Registration</a>
+</div> 
+
+<div class="maindiv2" >
+<headerrr2> 
+<h2 style="text-align:center;color:white ;font-size:350%;   ">
+<strong>History shelf </strong>
+</h2>
+</headerrr2>
+
+
+<br />
+
+
+
+<!-- chang-->
+<div class="book" >
+<img src="H1.jpg" alt=" book "  style=" width:210px; height:280px; float:left; margin-left:100px; padding-right:100px; " onclick="display()"/>
+<a href="#" id="test" style="display:none"><strong>Oman : Conditions, Issues and U.S. Relations</strong></a><br />
+<br />
+<pr id="test1" style="display:none">By: Haas, Sebastian. Series: Politics and Economics of the Middle East. New York :<br />
+Nova Science Publishers, Inc. 2013. eBook., Database: eBook Collection </pr>
+<br />
+<pr id="test2" style="display:none">(EBSCOhost)</pr><br />
+<pr id="test3" style="display:none">Subjects: HISTORY / Middle East / General</pr>
+<br />
+<br />
+<br />
+
+<img id="img1" src="fav-in.png" alt="favorit" style=" float:right; margin-right:25px; width:30px; height:30px; " onclick="changeImage()" />
+<br />
+</div>
+<br /><br /><br />
+
+<div class="book" >
+<img src="H2.jpg" alt=" book "  style=" width:210px; height:280px; float:left; margin-left:100px; padding-right:100px; "   onclick="display1()"/>
+<a href="#" id="test4" style="display:none"><strong>The First World War [electronic resource] / Hew Strachan.</strong></a><br />
+<br />
+<pr id="test5" style="display:none">By: Strachan, Hew. Oxford [England] ; New York : Oxford University Press, 2001- v. <br />
+<1 > : maps. Language: English, Database: CRCnetBase collection</pr>
+<br />
+
+<pr id="test6" style="display:none">Subjects: World War, 1914-1918; Electronic books</pr>
+<br />
+<br />
+<br />
+
+<img id="img2" src="fav-in.png" alt="favorit" style=" float:right; margin-right:25px; width:30px; height:30px; " onclick="changeImage1()" />
+<br />
+</div>
+<br /><br /><br />
+
+
+<div class="book" >
+<img src="H3.jpg" alt=" book "  style=" width:210px; height:280px; float:left; margin-left:100px; padding-right:100px; " onclick="display2()"/>
+<a href="#"id="test7" style="display:none"><strong>World war two [electronic resource] / Jeremy Black.</strong></a><br />
+<br />
+<pr id="test8" style="display:none">By: Black, Jeremy. New York : Routledge, 2003. 320 p. Language: English, <br />
+Database: CRCnetBase collection</pr>
+<br />
+
+<pr id="test9" style="display:none">Subjects: World War, 1939-1945; Electronic books</pr>
+<br />
+<br />
+<br />
+
+<img id="img3" src="fav-in.png" alt="favorit" style=" float:right; margin-right:25px; width:30px; height:30px; " onclick="changeImage2()" />
+<br />
+</div>
+<br /><br /><br />
+
+
+<div class="book" >
+<img src="H4.jpg" alt=" book "  style=" width:210px; height:280px; float:left; margin-left:100px; padding-right:100px; " onclick="display3()" />
+<a href="#" id="test10" style="display:none"><strong>The Princeton Field Guide to Dinosaurs : Second Edition</strong></a><br />
+<br />
+<pr id="test11" style="display:none">By: Paul, Gregory S. Series: Princeton Field Guides. Edition: 2nd edition. Princeton, <br />
+N.J. : Princeton University Press. 2016. eBook., Database: eBook Collection (EBSCOhost)</pr>
+<br />
+
+<pr id="test12" style="display:none">Subjects: NATURE / Animals / Dinosaurs & Prehistoric Creatures; NATURE / <br />
+Reference; SCIENCE / Paleontology; SCIENCE / Reference; Dinosaurs</pr>
+<br />
+<br />
+
+<img id="img4"src="fav-in.png" alt="favorit" style=" float:right; margin-right:25px; width:30px; height:30px; " onclick="changeImage3()"/>
+<br />
+</div>
+<br /><br /><br />
+
+<div class="book" >
+<img src="H5.jpg" alt=" book "  style=" width:210px; height:280px; float:left; margin-left:100px; padding-right:100px; " onclick="display4()" />
+<a href="#" id="test13" style="display:none"><strong>Navigating on the Titanic : Economic Growth, Energy, and the Failure of Governance</strong></a><br />
+<br />
+<pr id="test14" style="display:none">By: Purchase, Bryne Brock; Queen's University (Kingston, Ont.). Series: Queen's <br />
+Policy Studies Series, Vol. 177. Montréal & Kingston : Queen's Policy Studies. 2013. </pr>
+<br />
+
+<pr id="test15" style="display:none">eBook., Database: eBook Collection (EBSCOhost)</pr>
+<br />
+<pr id="test16" style="display:none">
+Subjects: POLITICAL SCIENCE / Public Policy / Economic Policy; Economic
+ development--United States; Climatic changes--Risk management--United States;
+  Climatic changes--Risk management--Canada; Economic development--Canada;
+   Power resources--Environmental aspects--United States; 
+   Power resources--Environmental aspects--Canada; Industrial policy--United States; 
+   Industrial policy--Canada
+</pr>
+
+<img id="img5"src="fav-in.png" alt="favorit" style=" float:right; margin-right:25px; width:30px; height:30px; " onclick="changeImage4()"/>
+<br />
+</div>
+<br /><br /><br />
+
+<!-- chang-->
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+<footer>
+<p1>Copyright &copy;OnlineLibrary.com</p1>
+<a href="#"><img  src="twitter.png"  alt="twitter" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="Instagram.png"  alt="Instagram" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="facebook.png"  alt="facebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+
+</footer>
+</div>
+
+
+
+
+
+<script>
+    function changeImage() {
+        element = document.getElementById('img1')
+        if (element.src.match("out")) {
+            element.src = "fav-in.png";
+        }
+        else {
+            element.src = "favorite-out.png";
+        }
+    }
+    function changeImage1() {
+        element = document.getElementById('img2')
+        if (element.src.match("out")) {
+            element.src = "fav-in.png";
+        }
+        else {
+            element.src = "favorite-out.png";
+        }
+    }
+
+    function changeImage2() {
+        element = document.getElementById('img3')
+        if (element.src.match("out")) {
+            element.src = "fav-in.png";
+        }
+        else {
+            element.src = "favorite-out.png";
+        }
+    }
+
+
+    function changeImage3() {
+        element = document.getElementById('img4')
+        if (element.src.match("out")) {
+            element.src = "fav-in.png";
+        }
+        else {
+            element.src = "favorite-out.png";
+        }
+    }
+
+
+    function changeImage4() {
+        element = document.getElementById('img5')
+        if (element.src.match("out")) {
+            element.src = "fav-in.png";
+        }
+        else {
+            element.src = "favorite-out.png";
+        }
+    }
+
+
+
+
+
+    function display() {
+
+        document.getElementById('test').style.display = 'block';
+        document.getElementById('test1').style.display = 'block';
+        document.getElementById('test2').style.display = 'block';
+        document.getElementById('test3').style.display = 'block';
+    }
+
+
+    function display1() {
+
+      
+        document.getElementById('test4').style.display = 'block';
+        document.getElementById('test5').style.display = 'block';
+        document.getElementById('test6').style.display = 'block';
+    }
+
+    function display2() {
+
+
+        document.getElementById('test7').style.display = 'block';
+        document.getElementById('test8').style.display = 'block';
+        document.getElementById('test9').style.display = 'block';
+    }
+
+    function display3() {
+
+
+        document.getElementById('test10').style.display = 'block';
+        document.getElementById('test11').style.display = 'block';
+        document.getElementById('test12').style.display = 'block';
+    }
+
+    function display4() {
+
+
+        document.getElementById('test13').style.display = 'block';
+        document.getElementById('test14').style.display = 'block';
+        document.getElementById('test15').style.display = 'block';
+        document.getElementById('test16').style.display = 'block';
+    }
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

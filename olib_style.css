@@ -1,0 +1,144 @@
+﻿ h
+        {
+            text-align:center;
+            font-size:700%;
+        }
+    .maindiv {
+    width: 100%;
+    border: 2px solid gray;
+     background-color:#efdcd5;
+     }
+     
+    header, footer{
+    padding:1em;
+    background-image :url("background.jpg");
+    color:#f5f5f5;
+    text-align:center;
+    clear: left;
+     }
+    
+  
+    .scrollmenu 
+    {
+       background-color:#321911
+    }
+      
+        .scrollmenu a
+        {
+            color:White;
+            text-align:center;
+            padding:1em;
+            display: inline-block;
+            text-decoration:none;
+              padding-left:40px;
+              padding-right:40px;
+        }
+         .scrollmenu a:hover
+        {
+             background-color:#bdbdbd;
+             color:Black ;
+        }
+        
+        .pp 
+        {
+            
+           
+             
+            color:Black ;
+            font-size:x-large ;
+            font-family:@MS Gothic  ;
+            padding:5em;
+            border:1px sloid black;
+   
+   
+  
+}
+video
+{
+    
+    padding:1em;
+    float:left;
+    margin-right:50px;
+  
+}
+.article
+      {
+          margin-right:25px;
+          text-align:center;
+          
+      }
+      
+         .book
+      {
+         
+          padding:30px;
+          font-size:200%;
+          background-color:#5d4037;
+         
+          
+          }
+         .next 
+         {
+             text-align:center;
+             color:Black;
+        
+             
+         }
+         .next a
+         {
+              text-decoration:none;
+             }
+         .next a:hover
+         {
+             background-color:#f5f5f5;
+             color:Black;
+         }
+         
+         pr
+         {
+             color:GrayText ;
+             font-size:50%;
+             
+             }
+      
+       a
+         {
+             color:Silver;
+             font-size:100%;
+             
+             }
+             
+             
+.img1  
+{
+   padding:3em; float:left;width:170px;height:220px;  max-width: 100%;
+    height: auto;}
+      
+      
+       .rdiv
+      {
+          float:none;
+          background-color:#5e4238;
+          text-align:center;
+          color:White;
+         margin-left:350px;
+          padding:40px;
+       
+          width:40%;
+          
+          
+          
+          }
+          
+          headerrr2{
+    padding:1em;
+    color:#f5f5f5;
+    text-align:center;
+    clear: left;
+     }
+     
+     .maindiv2 {
+    width: 100%;
+    border: 2px solid gray;
+     background-image :url("sss.jpg");
+     }

@@ -1,0 +1,154 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link rel="shortcut icon" href="3.png" type="image/x-icon" />
+    <title>OnlineLibrary</title>
+    <link rel="stylesheet" href="olib_style.css">
+
+<script>
+    function bigImg(x) {
+        x.style.height = "40px";
+        x.style.width = "40px";
+    }
+
+    function normalImg(x) {
+        x.style.height = "25px";
+        x.style.width = "25px";
+    }
+</script>
+
+
+</head>
+<body>
+<div class="maindiv"> 
+
+<header>
+<a href="index.htm"><img src="3.png" alt="book logo" style=" float:left;  margin:25px; width:250px;height:110px;" /></a> 
+<img src="search (1).png" alt="search" style="float:right; margin-top:60px; margin-right:40px; width:40px; height:40px; padding:1em;"/>
+
+<a href="#"><img  src="twitter.png"  alt="twitter" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="Instagram.png"  alt="Instagram" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="facebook.png"  alt="facebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+
+<h1 style=" text-align:left; font-size:500%; font-family:Times New Roman Baltic;"> Online Library </h1>
+
+</header>
+
+<div class="scrollmenu">
+<a href="index.htm";>HOME</a>
+<a href="art.htm";>ARTS</a>
+<a href="history.htm">HISTORY </a>
+<a href="science.htm">SCIENCE</a>
+<a href="favorits.htm">FAVORITS</a>
+<a href="aboutUs.htm">ABOUT US</a>
+<a href="contactUS.htm">CONTACT US</a>
+<a href="Rigister.htm">Registration</a>
+</div> 
+
+<div class="maindiv2" >
+<headerrr2> 
+<h2 style="text-align:center;color:white ;font-size:350%; ; ">
+<strong>Arts shelf </strong>
+</h2>
+</headerrr2>
+
+
+
+<!-- chang-->
+<div class="book";>
+<img src="A1.jpg" alt=" book "  style=" width:210px; height:280px; float:left; margin-left:100px; padding-right:100px;" onclick="display()"   />
+<a href="#" id="test" style="display:none"><strong>Shakespeare : the late plays / Kate Aughterson.</strong></a><br />
+<br />
+<br />
+<pr id="test1" style="display:none">By: Aughterson, Kate. Basingstoke, Hampshire ; New York : Palgrave Macmillan, <br />
+c2013. xi, 281 pages : illustrations ; 23 cm. Language: English, Database: SQU Libraries</pr>
+<br />
+<pr id="test2" style="display:none">Subjects: Shakespeare, William, 1564-1616 -- Criticism and interpretation; Shakespeare, William, 1564-1616</pr>
+<br />
+<br />
+
+<img id="img1" src="fav-in.png"  alt="favorit" style=" float:right; margin-right:25px; width:30px; height:30px; " onclick="changeImage()" />
+<br />
+</div>
+<br /><br /><br />
+
+<div class="book" >
+<img src="A2.jpg" alt=" book "  style=" width:210px; height:280px; float:left; margin-left:100px; padding-right:100px; " onclick="display1()" />
+<a href="#" id="test3" style="display:none" ><strong>Hamlet / William Shakespeare.</strong></a><br />
+<br />
+<br />
+<pr id="test4" style="display:none">By: Shakespeare, William. [Auckland, New Zealand] : Floating Press, 2008. 1 online <br />
+resource (275 pages) Language: English, Database: Ebrary eBooks</pr>
+<br />
+<pr id="test5" style="display:none">Subjects: Hamlet (Legendary character) -- Drama; Kings and rulers -- Succession -- Drama; Murder victims' families -- Drama; Electronic books</pr>
+<br />
+
+<img id="img2" src="fav-in.png" alt="favorit" style=" float:right; margin-right:25px; width:30px; height:30px; " onclick="changeImage1()" />
+<br />
+</div>
+
+<!-- chang-->
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+<footer>
+<p1>Copyright &copy;OnlineLibrary.com</p1>
+<a href="#"><img  src="twitter.png"  alt="twitter" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="Instagram.png"  alt="Instagram" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="facebook.png"  alt="facebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+
+</footer>
+
+</div>
+
+
+<script>
+    function changeImage() {
+        element = document.getElementById('img1')
+        if (element.src.match("out")) {
+            element.src = "fav-in.png";
+        }
+        else {
+            element.src = "favorite-out.png";
+        }
+    }
+    function changeImage1() {
+        element = document.getElementById('img2')
+        if (element.src.match("out")) {
+            element.src = "fav-in.png";
+        }
+        else {
+            element.src = "favorite-out.png";
+        }
+    }
+
+    function display() {
+
+        document.getElementById('test').style.display = 'block';
+        document.getElementById('test1').style.display = 'block';
+        document.getElementById('test2').style.display = 'block';
+    }
+
+
+    function display1() {
+
+        document.getElementById('test3').style.display = 'block';
+        document.getElementById('test4').style.display = 'block';
+        document.getElementById('test5').style.display = 'block';
+    }
+
+</script>
+
+
+
+</body>
+</html>

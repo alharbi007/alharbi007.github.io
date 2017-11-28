@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <link rel="shortcut icon" href="3.png" type="image/x-icon" />
+    <title>OnlineLibrary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="olib_style.css">
+
+<script>
+    function bigImg(x) {
+        x.style.height = "40px";
+        x.style.width = "40px";
+    }
+
+    function normalImg(x) {
+        x.style.height = "25px";
+        x.style.width = "25px";
+    }
+</script>
+
+
+</head>
+<body>
+<div class="maindiv"> 
+
+<header>
+<a href="index.htm"><img src="3.png" alt="book logo" style=" float:left;  margin:25px; width:250px;height:110px;" /></a> 
+<img src="search (1).png" alt="search" style="float:right; margin-top:60px; margin-right:40px; width:40px; height:40px; padding:1em;"/>
+
+<a href="#"><img  src="twitter.png"  alt="twitter" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="Instagram.png"  alt="Instagram" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="facebook.png"  alt="facebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:right ; margin-right:25px; width:25px; height:25px; " /></a>
+
+<h1 style=" text-align:left; font-size:500%; font-family:Times New Roman Baltic;"> Online Library </h1>
+
+</header>
+
+<div class="scrollmenu">
+<a href="index.htm";>HOME</a>
+<a href="art.htm";>ARTS</a>
+<a href="history.htm">HISTORY </a>
+<a href="science.htm">SCIENCE</a>
+<a href="favorits.htm">FAVORITS</a>
+<a href="aboutUs.htm">ABOUT US</a>
+<a href="contactUS.htm">CONTACT US</a>
+<a href="Rigister.htm">Registration</a>
+
+</div>
+<br />
+<br />
+<br />
+<h2 style="text-align:center;color:#5f4339;font-size:250%;">
+<strong> Registration </strong>
+</h2>
+<br />
+
+
+<!-- chang-->
+<div class ="rdiv">
+<form name="myForm" acton="/register.php" onsubmit="return validateForm()" method="post">
+
+USER NAME:
+<input type="text" name="fname" style="padding:10px;" />
+<br /><br />
+PASSWORD:
+<input type="password" name="pass"  style="padding:10px;"/>
+<br /><br />
+
+<input type="submit" value="sign in"  style="padding:10px;" />
+<input type="reset" value="reset"  style="padding:10px;" />
+</form>
+</div>
+<!-- chang-->
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+<footer>
+<p1>Copyright &copy;OnlineLibrary.com</p1>
+<a href="#"><img  src="twitter.png"  alt="twitter" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="Instagram.png"  alt="Instagram" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+<a href="#"><img  src="facebook.png"  alt="facebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" style=" float:left; margin-right:25px; width:25px; height:25px; " /></a>
+
+</footer>
+</div>
+</body>
+</html>
